@@ -1,0 +1,10 @@
+* gitconfig (and others?) is env dependent, e.g. work vs personal
+  => need templating? Erb?
+
+* uninstall script
+* watch script
+
+by:
+- OS (OS X, Linux)
+- env (work, perso, etc)
+- local, remote (GUI/CLI, etc)
