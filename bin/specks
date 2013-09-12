@@ -7,7 +7,7 @@ DOT_ROOT = File.join(ENV["HOME"], '.dot')
 MODULES_DIR = "#{DOT_ROOT}/modules"
 EXPORTS_DIR = "#{DOT_ROOT}/.exports"
 
-# usage: dotdot [module]
+# usage: specks [module]
 
 module_arg = ARGV[0]
 
@@ -22,9 +22,9 @@ else
 end
 
 def bannerise(source, mod, file, action, comment)
-  "#{comment} -- [dotdot:start #{action} #{file}] --\n" +
+  "#{comment} -- [specks:start #{action} #{file}] --\n" +
   "#{source.chomp}\n" +
-  "#{comment} -- [dotdot:end #{action} #{file}] --\n"
+  "#{comment} -- [specks:end #{action} #{file}] --\n"
 end
 
 def export(mod, file, comment)
